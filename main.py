@@ -225,7 +225,7 @@ async def analyze_text(text, message, analyzing_msg):
 
     # リアクションの追加（メンションされたときは不要）
     if analyzing_msg:
-        final_reaction = '✅' if label == 'SAFE' else '🔞'
+        final_reaction = '✅' if label == 'safe' else '🔞'
         await message.add_reaction(final_reaction)
 
 async def translate_to_english(text):
